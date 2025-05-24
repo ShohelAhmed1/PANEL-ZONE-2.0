@@ -1,0 +1,131 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(145deg, #1d2b64, #f8cdda);
+  color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Glow overlay */
+.glow-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  animation: glow 3s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@keyframes glow {
+  0% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+/* Reset Container Styling */
+.reset-container {
+  width: 380px;
+  background-color: #2b3a57;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.reset-container h1 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Form Steps */
+form label {
+  display: block;
+  font-size: 0.9rem;
+  color: #ddd;
+  text-align: left;
+  margin: 10px 0 5px;
+}
+
+select,
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  background: #4a5b73;
+  border: 2px solid #5d6d7e;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #fff;
+  outline: none;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.7);
+}
+
+/* Payment Info */
+#paymentDetails {
+  background: #34495e;
+  padding: 10px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background: #e74c3c;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+button[type="submit"]:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+  box-shadow: 0px 6px 20px rgba(231, 76, 60, 0.5);
+}
+
+/* File Input Fix */
+input[type="file"] {
+  background: transparent;
+  border: none;
+  padding: 4px;
+}
+
+input[type="file"]:hover {
+  background: rgba(52, 152, 219, 0.1);
+}
+
+
+

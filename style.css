@@ -1,0 +1,204 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1f1f1f, #131313);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 30px 20px;
+}
+header .company-name {
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 15px #00ffff, 0 0 25px #0077ff;
+}
+header p {
+  color: #aaa;
+  font-size: 1rem;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+/* Panel Container */
+.panel-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  flex: 1;
+}
+
+/* Panel Card */
+.panel-card {
+  background: #232323;
+  border: 2px solid #333;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  min-height: 420px;
+}
+.panel-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+  background: linear-gradient(135deg, #0077ff, #00ffff);
+}
+
+/* Panel Title */
+.panel-card h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 18px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+/* Panel Features */
+.panel-options {
+  list-style: none;
+  flex-grow: 1;
+  padding-left: 18px;
+  margin-bottom: 15px;
+}
+.panel-options li {
+  margin-bottom: 10px;
+  color: #ccc;
+  position: relative;
+  font-weight: 500;
+}
+.panel-options li::before {
+  content: "✔️";
+  position: absolute;
+  left: -20px;
+  color: #00ffff;
+  font-size: 1rem;
+}
+
+/* Buy Button */
+.buy-button {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 35px;
+  background: linear-gradient(135deg, #00ffff, #0077ff);
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  margin-top: auto;
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.buy-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffe1, 0 0 30px #6a00ff;
+  background: linear-gradient(135deg, #6a00ff, #00ffff);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #111;
+  border-top: 3px solid #333;
+  border-bottom: 2px solid #333;
+}
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+footer .social-icons a {
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 18px;
+  border-radius: 50%;
+  background: #222;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 5px 20px rgba(0, 255, 255, 0.2);
+}
+
+footer .social-icons a:before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  transform: rotate(45deg);
+  transition: all 0.4s ease;
+  z-index: 0;
+  opacity: 0;
+}
+
+footer .social-icons a:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.3);
+}
+
+footer .social-icons a:hover:before {
+  opacity: 1;
+  transform: rotate(45deg) translate(100%, 100%);
+}
+
+footer .social-icons i {
+  transition: color 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+}
+
+footer .social-icons a:hover i {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* Footer Text */
+footer p {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #aaa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+

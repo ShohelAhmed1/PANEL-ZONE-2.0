@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HWID Reset</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="glow-overlay"></div>
+
+  <div class="reset-container">
+    <h1>🔁 HWID Reset Request</h1>
+    <form id="resetForm">
+      <label>🔘 Select Panel</label>
+      <select name="panel" required>
+        <option value="">-- Choose Panel --</option>
+        <option>Premium Panel</option>
+        <option>Sniper Panel</option>
+        <option>Aimbot Panel</option>
+        <option>Internal Panel</option>
+        <option>Silent Aim</option>
+        <option>Emulator Bypass</option>
+      </select>
+
+      <label>👤 Username</label>
+      <input type="text" name="username" placeholder="Enter your username" required/>
+
+      <label>🔒 Password</label>
+      <input type="password" name="password" placeholder="Enter your password" required/>
+
+      <label>💳 Payment Method</label>
+      <select name="payment" id="paymentSelect" required>
+        <option value="">-- Select Payment Method --</option>
+        <option value="bkash">bKash</option>
+        <option value="nagad">Nagad</option>
+        <option value="binance">Binance</option>
+      </select>
+
+      <label id="paymentInfo" class="hidden">💸 Payment Info</label>
+      <div id="paymentDetails" class="hidden">Please select a payment method</div>
+
+      <label>📄 Transaction ID</label>
+      <input type="text" name="txid" placeholder="Enter TXID" required/>
+
+      <label>📷 Upload Screenshot</label>
+      <input type="file" name="screenshot" accept="image/*" required/>
+
+      <button type="submit">Submit HWID Reset</button>
+    </form>
+
+   
+
+  <script src="reset.js"></script>
+</body>
+</html>

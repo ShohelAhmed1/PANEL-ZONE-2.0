@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Select Subscription - PANEL ZONE 2.0</title>
+  <link rel="stylesheet" href="substyle.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="glow-overlay"></div>
+  <main class="subscription-container">
+    <h2 id="panel-title">✨ Select Your Panel</h2>
+
+    <section class="step">
+      <label>Select Panel:</label>
+      <select id="panel">
+        <option value="">-- Choose Panel --</option>
+        <option value="Premium">🔥 Premium Panel</option>
+        <option value="Sniper">🎯 Sniper Scope Panel</option>
+        <option value="Aimbot">🎮 Aimbot Panel</option>
+        <option value="Internal">🧠 Internal Panel</option>
+        <option value="SilentAim">👁️ Silent Aim</option>
+        <option value="Bypass">💀 Bypass</option>
+      </select>
+    </section>
+
+    <section class="step">
+      <label>Select Subscription:</label>
+      <select id="duration">
+        <option value="">-- Choose Duration --</option>
+      </select>
+    </section>
+
+    <section class="step">
+      <label>Select Payment Method:</label>
+      <select id="payment-method">
+        <option value="">-- Choose Payment --</option>
+        <option value="bkash">bKash</option>
+        <option value="nagad">Nagad</option>
+        <option value="binance">Binance</option>
+      </select>
+    </section>
+    <div id="payment-details" class="step hidden">
+      <p id="payment-info">Send money to:</p>
+    </div>
+
+    <section class="step">
+      <label>Transaction ID:</label>
+      <input type="text" id="trxid" placeholder="Enter TrxID" />
+    </section>
+
+    <section class="step">
+      <label>Email Address:</label>
+      <input type="email" id="email" placeholder="Enter your email" />
+    </section>
+
+    <section class="step">
+      <label>Upload Screenshot:</label>
+      <input type="file" id="screenshot" accept="image/*" />
+    </section>
+
+    <button id="submit-btn">🚀 Submit Payment Info</button>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@PanelZone_2.0" target="_blank" title="Telegram"><i class="fab fa-youtube"></i></a>
+      <a href="https://discord.gg/DW3r7vbwJX" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+    </div>
+    <p>&copy; 2025 PANEL ZONE 2.0 | Made by <strong>SHOHEL AHMED</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
